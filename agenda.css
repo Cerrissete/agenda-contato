@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body{
+    background-color: green;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 15px;
+}
+
+.containerLastName{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+.comboBox{
+    width: 30%;
+    
+
+}
+
+.btsSalvarCancelar{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 10px;
+
+}
+
+.btnCancelar, .btnSalvar, .btnEditar, .btnExcluir {
+    
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.btnCancelar:hover,
+.btnSalvar:hover,
+.btnEditar:hover,
+.btnExcluir:hover {
+    filter: brightness(0.7);
+    transition: all 1s ease-in-out;
+}
+
+.btnExcluir{
+    color: white;
+    background-color: red;
+}
+.btnEditar{
+    background-color: rgb(0, 145, 0);
+    color: white;
+
+}
+
+.btnEditar, .btnExcluir{
+    width: 35px;
+    height: 30px;
+}
+
+.btnCancelar{
+    background: linear-gradient(45deg, red, darkred);
+}
+
+.btnCancelar:hover{
+    background: linear-gradient(45deg, rgb(227, 252, 1), darkred);
+    color: white;
+    transition: 1s all;
+}
+
+.btnSalvar:hover{
+    background: linear-gradient(45deg, rgb(204, 204, 204), darkred);
+    color: white;
+    transition: 1s all;
+}
+
+
+.btnSalvar{    
+    background-color: rgb(182, 1, 1);
+
+}
+
+#pesquisa{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+li{
+    margin-bottom: 0.5rem;
+
+}
+
+.lista{
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+
+}
+
+.agenda{
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    border-color: #f9f9f9;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+
+}
+
+.imagem{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    flex: 1;
+}
+
+select{
+    cursor: pointer;
+}
+
+
+table{
+    width: 100%;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0; 
+}
+
+tr:first-child{
+    background-color: #3e65f9;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+tr td:last-child,
+tr td:nth-last-child(2){
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="agenda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+    <div class="agenda">
+    <header>
+        <h1>Criar contatos</h1>
+    </header>
+    <div class="imagem">
+        <img src="giphy.gif" alt="logo" style="width: 400px; height: 200px; padding: 0px 0px 20px;">
+    </div>
+
+
+    <form id="idContatoForm">
+        <div class="container">            
+            <div class="imgIcon">
+                <i class="fa-solid fa-user-secret fa-spin fa-lg"></i>
+            </div>
+            <input type="text" id="idNome" placeholder="Nome"/>                 
+        </div>
+        
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa-solid fa-address-card fa-bounce"></i>
+            </div>
+            <div class="contato nome">
+                <input type="text" id="idSobrenome" placeholder="Sobrenome">
+            </div>
+        </div>
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa-solid fa-phone-volume fa-shake"></i>
+            </div>
+            <div class="contato numero">
+                <input type="tel" id="idTel" placeholder="Telefone">
+            </div>
+            <div class="comboBox">
+                <select name="Marcador" id="idTelTipo">
+                    <option value="" hidden>Selecione o tipo</option>
+                    <option value="celular">Celular</option>
+                    <option value="fixoCasa">Casa</option>
+                    <option value="fixoTrabalho">Trabalho</option>
+                    <option value="fax">Fax</option>            
+                </select>
+            </div>
+        </div>            
+        <div class="container">
+            <div class="imgIcon">
+                <i class="fa-solid fa-envelopes-bulk"></i>
+            </div>
+            <div class="contato email">
+                <input type="email" id="idEmail" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="btsSalvarCancelar">
+            <div class="cancelar">
+                <input type="submit" value="Cancelar" class="btnCancelar">
+            </div>        
+            <div class="salvar">            
+                <input type="submit" value="Salvar" class="btnSalvar">
+            </div>
+        </div>   
+    </form>
+
+
+    <div class="lista">
+        <input type="text" id="idPesquisa" placeholder="Pesquisar">
+        <table id="idTabelaContatos">
+            <tbody></tbody>
+        </table>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="agenda.js"></script>
+
+</body>
+</html>
